@@ -1,6 +1,7 @@
 .idea
 logs
 profiles/.user.yml
-target
+target/*
 
 !.gitkeep
+!target/.gitkeep
