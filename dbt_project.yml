@@ -17,4 +17,7 @@ clean-targets:
   - dbt_packages
 
 models:
-  +materialized: table
+  oss_data_platform:
+    +materialized: table
+    datamart:
+      +schema: datamart

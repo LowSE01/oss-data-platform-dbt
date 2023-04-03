@@ -1,18 +1,3 @@
-datalake:
-  target: dev
-  outputs:
-    dev:
-      type: postgres
-      host: odp-postgres
-      user: postgres
-      password: postgres
-      port: 5432
-      dbname: postgres
-      schema: datalake
-      threads: 1
-      keepalives_idle: 0
-      connect_timeout: 10
-
 datawarehouse:
   target: dev
   outputs:
@@ -24,21 +9,6 @@ datawarehouse:
       port: 5432
       dbname: postgres
       schema: datawarehouse
-      threads: 1
-      keepalives_idle: 0
-      connect_timeout: 10
-
-datamart:
-  target: dev
-  outputs:
-    dev:
-      type: postgres
-      host: odp-postgres
-      user: postgres
-      password: postgres
-      port: 5432
-      dbname: postgres
-      schema: datamart
       threads: 1
       keepalives_idle: 0
       connect_timeout: 10
