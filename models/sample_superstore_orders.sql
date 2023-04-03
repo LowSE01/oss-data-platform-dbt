@@ -11,6 +11,6 @@ select        details.row_id,
               orders.customer_id,
               orders.city_id,
               orders.postal_code
-from          datalake.sample_superstore_details         details
-  left join   datalake.sample_superstore_orders          orders
+from          {{ source('datalake', 'sample_superstore_details') }}             details
+  left join   {{ source('datalake', 'sample_superstore_orders') }}              orders
     on        orders.order_id = details.order_id

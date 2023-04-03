@@ -1,4 +1,5 @@
 .idea
+.user.yml
 logs
 profiles/.user.yml
 target/*

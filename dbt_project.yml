@@ -1,4 +1,4 @@
-name: 'oss_data_platform'
+name: 'dbt_datawarehouse'
 config-version: 2
 version: '1.0.0'
 
@@ -17,7 +17,4 @@ clean-targets:
   - dbt_packages
 
 models:
-  oss_data_platform:
-    +materialized: table
-    datamart:
-      +schema: datamart
+  +materialized: table

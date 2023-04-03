@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: datalake
+    schema: datalake
+    tables:
+      - name: sample_superstore_categories
+      - name: sample_superstore_cities
+      - name: sample_superstore_countries
+      - name: sample_superstore_customers
+      - name: sample_superstore_details
+      - name: sample_superstore_orders
+      - name: sample_superstore_products
+      - name: sample_superstore_regional_managers
+      - name: sample_superstore_regions
+      - name: sample_superstore_returns
+      - name: sample_superstore_segments
+      - name: sample_superstore_ship_modes
+      - name: sample_superstore_states
+      - name: sample_superstore_sub_categories
